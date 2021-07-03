@@ -13,7 +13,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -30,14 +30,13 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
+                <p>Total Number of Tenants</p>
                  <h3>{{ $count_tenants }}</h3>
-
-                <p>Tenants</p>
               </div>
               <div class="icon">
                 <i class="fa fa-users"></i>
               </div>
-              <a href="" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ url('tenants') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -45,12 +44,11 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>0<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Active Applicants</p>
+                <p>Total Number of Houses</p>
+                <h3>0</h3>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+                <i class="ion ion-home"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -60,12 +58,11 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
+                <p>Total Income</p>
                 <h3>0</h3>
-
-                <p>Courses</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="ion ion-cash"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -97,7 +94,7 @@
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-pie mr-1"></i>
-                  Course Selection
+
                 </h3>
               </div><!-- /.card-header -->
               <div class="card-body">

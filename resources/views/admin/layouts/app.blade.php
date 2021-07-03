@@ -125,7 +125,7 @@
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
+              <i class="nav-icon fas fa-user"></i>
               <p>
                  Tenants
                 <i class="fas fa-angle-left right"></i>
@@ -135,13 +135,13 @@
               <li class="nav-item">
                 <a href="{{ url('tenants') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Active Tenants</p>
+                  <p> All Tenants</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ url('tenants/create') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Bills</p>
+                  <p>Register Tenant</p>
                 </a>
               </li>
 
@@ -149,34 +149,52 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
+              <i class="nav-icon fas fa-home"></i>
               <p>
-                Courses
+                Houses
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Create Course</p>
+                  <p>Vacant</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>All Courses</p>
+                  <p>Occupied</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add House</p>
                 </a>
               </li>
 
             </ul>
           </li>
 
-          <li class="nav-header">MISCELLANEOUS</li>
+          <li class="nav-header"><b><h4>Account/Finance</h4></b></li>
           <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.0/" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>Invoices</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-bill-alt"></i>
+              <p>Payments</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-bill-alt"></i
+              <p>Outstanding Balances</p>
             </a>
           </li>
         </ul>
@@ -191,9 +209,7 @@
   <footer class="main-footer">
     <strong>Copyright &copy; 2019-2021 <a href="#" target="blank">DevLangat</a>.</strong>
     All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0-pre
-    </div>
+
   </footer>
 
   <!-- Control Sidebar -->
